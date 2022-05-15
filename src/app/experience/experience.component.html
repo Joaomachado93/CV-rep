@@ -1,1 +1,11 @@
-<h2>teSTE 123</h2>
+<!-- <div nfor class="contain">
+    <img src="{{person.img}}" alt="" height="500">
+    <div class="contain-text">
+        <p>Nome: {{person.name}}</p>
+        <p>Idade: {{person.age}}</p>
+        <p>Localidade: {{person.address}}</p>
+    </div>
+</div> -->
+<div *ngFor="let person of person; index as i; first as isFirst">
+    {{i}}/{{person.length}}. {{person.anem}}
+</div>

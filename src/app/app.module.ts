@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 
+
+
 import { ExperienceComponent } from './experience/experience.component';
 
 const routes: Routes = [
