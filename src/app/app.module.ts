@@ -7,6 +7,14 @@ import { BannerComponent } from './banner/banner.component';
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { RouterModule, Routes } from '@angular/router';
+
+import { ExperienceComponent } from './experience/experience.component';
+
+const routes: Routes = [
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'home', component: HomeComponent },
+]; 
 
 @NgModule({
   declarations: [
@@ -18,7 +26,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
