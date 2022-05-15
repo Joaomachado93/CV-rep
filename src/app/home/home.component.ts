@@ -6,6 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
+  person = {
+    name: "João",
+    age: 29,
+    address: "Serzedelo, Guimarães",
+    img:"../../assets/eu.jpg"
+  }
+    
+  
+
 
   constructor() { }
 
