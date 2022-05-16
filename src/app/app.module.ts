@@ -7,14 +7,14 @@ import { BannerComponent } from './banner/banner.component';
 import { SliderComponent } from './slider/slider.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ExperienceComponent } from './experience/experience.component';
 import { RouterModule, Routes } from '@angular/router';
 
-
-
-import { ExperienceComponent } from './experience/experience.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   { path: 'experience', component: ExperienceComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'home', component: HomeComponent },
 ]; 
 
@@ -24,12 +24,14 @@ const routes: Routes = [
     BannerComponent,
     SliderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

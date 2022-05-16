@@ -1,11 +1,11 @@
-<!-- <div nfor class="contain">
-    <img src="{{person.img}}" alt="" height="500">
-    <div class="contain-text">
-        <p>Nome: {{person.name}}</p>
-        <p>Idade: {{person.age}}</p>
-        <p>Localidade: {{person.address}}</p>
+<div class="container" *ngFor="let experience of experience; let i =index ">
+    <div class="wrapper">
+      <h1> A day in my 'sleepy' life 😅</h1>
+      <ul class="sessions">
+        <li>
+          <div class="time">{{experience.name}}, durante {{experience.duration}}, em {{experience.address}}</div>
+          <p>{{experience.Description}}</p>
+        </li>
+      </ul>
     </div>
-</div> -->
-<div *ngFor="let person of person; index as i; first as isFirst">
-    {{i}}/{{person.length}}. {{person.anem}}
-</div>
+  </div> 

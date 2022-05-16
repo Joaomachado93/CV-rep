@@ -19,7 +19,17 @@ experience = [
     address: "Serzedelo, Guimarães",
     img:"../../assets/eu.jpg"
   }
-
+  names = [
+    "Ana",
+    "João",
+    "Miguel",
+    "Cenas","Rute",
+  ];
+  cities = [
+    { name: "São Paulo", state: "SP" },
+    { name: "Guimarães", state: "SP" },
+    {name: "Braga", state:"Br"},
+  ]
   ngOnInit(): void {
   }
 
