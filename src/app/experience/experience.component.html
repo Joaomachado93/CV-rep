@@ -1,11 +1,16 @@
 <div class="container" *ngFor="let experience of experience; let i =index ">
     <div class="wrapper">
-      <h1> A day in my 'sleepy' life 😅</h1>
       <ul class="sessions">
         <li>
           <div class="time">{{experience.name}}, durante {{experience.duration}}, em {{experience.address}}</div>
           <p>{{experience.Description}}</p>
+              <div class="times">
+      <p id="days"></p>
+      <p id="hours"></p>
+      <p id="mins"></p>
+      <p id="seconds"></p>
+    </div>
         </li>
       </ul>
     </div>
-  </div> 
+  </div>  
